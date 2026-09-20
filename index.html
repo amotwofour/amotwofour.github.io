@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>amotwofour</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
+    <div id="boot">
+      <p>booting portfolio_os v1.0...</p>
+      <p>mounting /home/[your-name]...</p>
+      <p>loading projects... skills... experience...</p>
+      <p class="ok">ready.</p>
+    </div>
+    <div id="sudo-toast">permission granted. nice try.</div>
     <main>
       <p class="prompt">$ whoami</p>
       <h1>👋, I'm Aryan Mohanty</h1>
-      <p class="desc">
-        Computer Engineering student @ Iowa State University, graduating fall
-        2027. Interested in front-end and back-end development, embedded
-        systems, GPU computing, and AI/ML. Also pretty interested in fabrication
-        and spinny clouds.
-      </p>
+      <p
+        class="desc"
+        id="desc"
+        data-full-text="Computer Engineering student @ Iowa State University, graduating fall 2027. Interested in front-end and back-end development, embedded systems, GPU computing, and AI/ML. Also pretty interested in fabrication and spinny clouds."
+      ></p>
 
       <section>
         <h2>now</h2>
