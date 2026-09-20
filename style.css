@@ -1,0 +1,164 @@
+:root {
+  --bg: #282828;
+  --bg-raised: #3c3836;
+  --text: #ebdbb2;
+  --text-dim: #a89984;
+  --accent: #b8bb26;
+  --rule: #504945;
+  --mono: "IBM Plex Mono", "SF Mono", Menlo, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--mono);
+  line-height: 1.6;
+  padding: 4rem 1.5rem 6rem;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.prompt {
+  color: var(--accent);
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+
+.desc {
+  color: var(--text-dim);
+  margin: 0 0 2.5rem;
+  font-size: 0.95rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 0 1rem;
+}
+
+h2::before {
+  content: "# ";
+  color: var(--text-dim);
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.project {
+  border-left: 2px solid var(--rule);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.project-name {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--text-dim);
+}
+
+.project-name:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.project-desc {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  margin: 0.35rem 0 0.35rem;
+}
+
+.stack {
+  font-size: 0.8rem;
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+.stack::before {
+  content: "tech: ";
+  color: var(--text-dim);
+}
+
+.skills-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.skills-label {
+  color: var(--text-dim);
+  min-width: 90px;
+  flex-shrink: 0;
+}
+
+.exp-entry {
+  margin-bottom: 1.25rem;
+}
+
+.exp-role {
+  font-weight: 600;
+}
+
+.exp-meta {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.exp-line {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.links {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.links a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--text-dim);
+}
+
+.links a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--text-dim);
+  font-size: 0.75rem;
+}
