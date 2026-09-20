@@ -238,8 +238,8 @@ footer {
   color: var(--accent);
 }
 
-/* typing cursor for the tagline while it types out */
-.tagline.typing::after {
+/* typing cursor for the desc while it types out */
+.desc.typing::after {
   content: "_";
   animation: blink 1s step-end infinite;
   color: var(--accent);
@@ -275,7 +275,7 @@ footer {
   #boot {
     display: none;
   }
-  .tagline.typing::after {
+  .desc.typing::after {
     animation: none;
     content: "";
   }
